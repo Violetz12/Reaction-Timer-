@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Timer Retro</title>
+
+    <!-- Funky retro font -->
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Space+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Space Mono', monospace;
+            background: #fef9e6;
+            color: #222;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px;
+            background: #ff6f61;
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        header h1 {
+            font-family: 'Monoton', cursive;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+
+        .hero {
+            padding: 60px 20px;
+        }
+
+        .hero img {
+            width: 320px;
+            border: 6px solid #222;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+            background: #fff;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-family: 'Monoton', cursive;
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 40px;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .feature-box {
+            border: 3px solid #222;
+            padding: 25px;
+            background: #fff;
+            transform: rotate(-1deg);
+            transition: transform 0.2s;
+        }
+
+        .feature-box:hover {
+            transform: rotate(2deg) scale(1.03);
+        }
+
+        /* Creators */
+        .creators {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .creator {
+            width: 200px;
+            background: #fff;
+            border: 3px solid #222;
+            padding: 15px;
+            transform: rotate(1deg);
+        }
+
+        .creator img {
+            width: 100%;
+            border: 3px solid #ff6f61;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .creator p {
+            font-size: 0.9rem;
+        }
+
+        /* Video */
+        .video iframe {
+            width: 80%;
+            max-width: 600px;
+            height: 340px;
+            border: 5px solid #222;
+            background: #fff;
+        }
+
+        footer {
+            padding: 30px;
+            font-size: 0.8rem;
+            background: #222;
+            color: #fff;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>REACTION TIMER</h1>
+        <p> ⚡</p>
+    </header>
+
+    <div class="hero">
+        <img src="product-placeholder.jpg" alt="Reaction Timer Product">
+    </div>
+
+    <section>
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-box">⚡ Test your reflexes</div>
+            <div class="feature-box">🎲 Challenge your friends</div>
+            <div class="feature-box">📈 Track your improvement</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Meet the Creators</h2>
+        <div class="creators">
+            <div class="creator">
+                <img src="Zhi Cheng.jpg" alt="Creator 1">
+                <p><b>Zhi Cheng</b><br>Programming & Hardware</p>
+            </div>
+            <div class="creator">
+                <img src="mun.jpg" alt="Creator 2">
+                <p><b>Muna Maisara</b><br>Creative Director</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <h2>Demo Video</h2>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        © 2025 Reaction Timer Project | Built retro-style 🌀
+    </footer>
+
+</body>
+
+</html>
